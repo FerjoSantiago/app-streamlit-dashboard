@@ -63,15 +63,15 @@ if archivo is not None:
                 "Tienda 2": tienda2,
                 "Tipo 1": df1["Tipo"],
                 "Tipo 2": df2["Tipo"],
-                "M2 Tienda 1": df1["M2"],
-                "M2 Tienda 2": df2["M2"],
+                "M2 Tienda 1": f"{df1['M2']:,.2f}",
+                "M2 Tienda 2": f"{df2['M2']:,.2f}",
                 "Plantilla Tienda 1": df1["Plantilla"],
                 "Plantilla Tienda 2": df2["Plantilla"],
                 "Indicador": campo,
-                f"Monto {tienda1} ($)": round(val1, 2),
-                f"Monto {tienda2} ($)": round(val2, 2),
-                "Diferencia ($)": round(diferencia, 2),
-                "Diferencia %": f"{perc_dif:.1f}%",
+                f"Monto {tienda1} ($)": f"{val1:,.2f}",
+                f"Monto {tienda2} ($)": f"{val2:,.2f}",
+                "Diferencia ($)": f"{diferencia:,.2f}",
+                "Diferencia %": f"{perc_dif:,.1f}%",
                 "Sugerencia": sugerencia
             })
 
